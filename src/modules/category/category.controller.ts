@@ -2,7 +2,7 @@ import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards } from '@n
 import { CategoryService } from './category.service';
 import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
-import { AuthGuard } from 'src/common/dto/guards/auth.guard';
+import { AuthGuard } from '../../common/guard/auth.guard';
 
 @Controller('category')
 export class CategoryController {

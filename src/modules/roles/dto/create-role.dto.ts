@@ -1,9 +1,9 @@
 import { IsNotEmpty } from "class-validator";
 
-export class LoginDto {
+export class CreateRoleDto {
     @IsNotEmpty()
-    email: string;
+    token: string;
 
     @IsNotEmpty()
-    password: string;
+    name: string;
 }
